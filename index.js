@@ -28,6 +28,10 @@ const reduceRevenue = function (agg, el, i, arr) {
   return agg + el.revenue;
 };
 
+const reduceRevenue = function (agg, el, i, arr) {
+  return ..agg + el.revenue;
+};
+
 const totalRevenue = function (drivers) {
   return drivers.reduce(reduceRevenue, 0)
 };
