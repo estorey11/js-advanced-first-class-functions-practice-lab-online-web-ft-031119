@@ -12,9 +12,9 @@ const logDriversByHometown = function (drivers, location) {
   });
 };
 
-const logDriversByHometown = function (drivers, location) {
-  drivers.forEach(function (driver) {
-    if (driver.hometown===location){console.log(driver.name);}
+const driversByRevenue = function (drivers) {
+  drivers.sort(function (driver1, driver2) {
+    return driver1.revenue-driver2.revenue
   });
 };
 
